@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &149276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 439036}
+  - 114: {fileID: 11495886}
+  m_Layer: 0
+  m_Name: GameMaster 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &439036
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149276}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11495886
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4cf504bfdcf46df99b727d87023c95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_startScene: 
+  m_isPaused: 0
+  m_hasControl: 0
+  m_PlayerOneModelIndex: 0
+  m_PlayerTwoModelIndex: 0
+  m_currentScore: 0
+  m_highScore: 0
+  isTutorialOn: 0
+  m_timemode:
+    m_currentMode: 0
+    m_isPaused: 0
+    m_normalTimeLimit: 0
+    m_fastTimeLimit: 3
+    m_SlowMoTimeLimit: 3
+    m_prevTimeScale: 1
+    m_modeClock:
+      m_timeLimit: 0
+      m_counter: 0
+      m_isDone: 0
+      m_isStopped: 0
+  m_lives: 3
+  m_maxLives: 3
+  m_currentRound: 1
+  m_addSeqAtRound: 5
+  m_addNewSpawnAtRound: 5
+  m_currentNumOfSequences: 3
+  m_longestStreak: 0
+  m_playerSeq: 0
+  m_splashSceneDelay: 0
+  m_arenaTimeToStart: 0
+  m_sequenceCounter: 3
+  m_isInSugarRush: 0
+  m_scoreMultiplier: 1
+  m_timerStringSpecifier: 00.00
+  m_StringSpecifier: 00
+  m_isIncreasingSeq: 0
+  m_isCurrentRoundLost: 0
+  m_endTurnTransitionTime: 0.1
+  m_bufferTime: 5
+  m_isHurry: 0
+  m_playerTurnClock:
+    m_timeLimit: 10
+    m_counter: 10
+    m_isDone: 0
+    m_isStopped: 0
+  m_beforePlayerStartBuffer:
+    m_timeLimit: 0.8
+    m_counter: 0.8
+    m_isDone: 0
+    m_isStopped: 0
+  m_sequenceClock:
+    m_timeLimit: 0.8
+    m_counter: 0.8
+    m_isDone: 0
+    m_isStopped: 0
+  m_endTurnSequenceClock:
+    m_timeLimit: 0.3
+    m_counter: 0.3
+    m_isDone: 0
+    m_isStopped: 0
+  m_endTurnClock:
+    m_timeLimit: 5
+    m_counter: 5
+    m_isDone: 0
+    m_isStopped: 0
+  m_sequence: 
+  m_setUpClock:
+    m_timeLimit: 2
+    m_counter: 2
+    m_isDone: 0
+    m_isStopped: 0
+  m_startGameClock:
+    m_timeLimit: 3
+    m_counter: 3
+    m_isDone: 0
+    m_isStopped: 0
+  m_liveObjects: []
+  m_ufoTimer:
+    m_timeLimit: 3
+    m_counter: 3
+    m_isDone: 0
+    m_isStopped: 0
+  m_difficultyNameForUrl: 
+  isBeatHighScore: 0
+  m_dbUrl: https://boogiedowngamesapi.azure-mobile.net/tables/SpaceDweebs2
+  m_audioSource_applause: {fileID: 0}
+  m_isGameSetupDone: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 149276}
+  m_IsPrefabParent: 1

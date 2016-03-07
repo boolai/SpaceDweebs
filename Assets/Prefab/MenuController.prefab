@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &185738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 487334}
+  - 114: {fileID: 11415990}
+  - 114: {fileID: 11468934}
+  m_Layer: 0
+  m_Name: MenuController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &487334
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185738}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 482.5, y: 271.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11415990
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc95a3473d6a41bb99ee2110dcf650e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_transitionDelay: 1.5
+  m_controlsDelay: 2
+  m_canTouchMenu: 1
+  m_transitionSlider: {fileID: 0}
+  m_loadingScreenPanel: {fileID: 0}
+--- !u!114 &11468934
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95b52e54ccdf44608a7dad7e1cefcb45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_loadOnLevel: 0
+  m_isOnNetwork: 0
+  m_builders:
+  - m_name: 
+    m_prefab: {fileID: 169834, guid: 509f4ee6c5b4e4c5fbbe490fc28604c2, type: 2}
+    m_buffer: 25
+    m_activeCount: 0
+    m_deadCount: 0
+    m_okToInstantiate: 1
+    m_initialState: 0
+    m_objBank: []
+    m_buildState: 0
+    m_isNetworked: 0
+  - m_name: 
+    m_prefab: {fileID: 141946, guid: 4927656a51aa849d0b79c6ce68711ff3, type: 2}
+    m_buffer: 25
+    m_activeCount: 0
+    m_deadCount: 0
+    m_okToInstantiate: 1
+    m_initialState: 0
+    m_objBank: []
+    m_buildState: 0
+    m_isNetworked: 0
+  - m_name: 
+    m_prefab: {fileID: 133288, guid: f112c73eb53c34788bfd01bae2fb2cc6, type: 2}
+    m_buffer: 25
+    m_activeCount: 0
+    m_deadCount: 0
+    m_okToInstantiate: 1
+    m_initialState: 0
+    m_objBank: []
+    m_buildState: 0
+    m_isNetworked: 0
+  - m_name: 
+    m_prefab: {fileID: 167984, guid: 1e2c3ba69881a4338a2d4d5f515a9721, type: 2}
+    m_buffer: 24
+    m_activeCount: 0
+    m_deadCount: 0
+    m_okToInstantiate: 1
+    m_initialState: 0
+    m_objBank: []
+    m_buildState: 0
+    m_isNetworked: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 185738}
+  m_IsPrefabParent: 1

@@ -1,0 +1,6 @@
+0 - 10 idle
+11 - 21 fall
+21 - 32 landing
+32 - 43 right touch
+44 - 54 wrong touch
+55 - 65 death
