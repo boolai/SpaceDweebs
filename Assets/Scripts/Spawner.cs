@@ -77,7 +77,7 @@ namespace BoogieDownGames {
 
 			var chance = UnityEngine.Random.Range(0, 100);
 			//Make sure the trigger is good
-			if(!m_isOn && (chance <= 50) && m_canRandomized) {
+			if(!m_isOn && m_canRandomized) {
 				
 				//Get a random number
 				var r = UnityEngine.Random.Range(0, m_randomCeiling);
