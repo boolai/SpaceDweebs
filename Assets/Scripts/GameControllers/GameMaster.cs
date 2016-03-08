@@ -575,7 +575,8 @@ namespace BoogieDownGames {
 						m_endTurnSequenceClock.ResetClock();
 						m_endTurnSequenceClock.Counter = 100f;
 						//Debug.LogError("New spawn and anime sequence");
-						GameFSM.ChangeState(GameStateUIAnime.Instance);
+						//GameFSM.ChangeState(GameStateUIAnime.Instance);
+						StartCoroutine(DelaySetUp(m_endTurnTransitionTime));
 
 					} else {
 						StartCoroutine(DelaySetUp(m_endTurnTransitionTime));
