@@ -256,12 +256,14 @@ namespace BoogieDownGames {
 				
 
 				if(CurrentWave == 1) {
+					
 					//send a message that we picked this object
 					Hashtable dat = new Hashtable();
 					dat.Add("event", "FirstRound");
 					NotificationCenter.DefaultCenter.PostNotification(this, "PlayEvent",dat);
 					NotificationCenter.DefaultCenter.PostNotification(this,"SpawnRandom");
 					CurrentScore = 0;
+
 				} else {
 					//Spawn all the dweebs for this round
 

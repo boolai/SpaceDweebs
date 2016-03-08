@@ -121,8 +121,8 @@ namespace BoogieDownGames {
 		/// </summary>
 		public void SpawnRandomMaybe()
 		{
-			var chance = UnityEngine.Random.Range(0f, 1.5f);
-			StartCoroutine(SpawnRandomMaybeDelayed(chance));
+			//var chance = UnityEngine.Random.Range(0f, f);
+			StartCoroutine(SpawnRandomMaybeDelayed(0f));
 		}
 
 		/// <summary>
