@@ -535,9 +535,12 @@ namespace BoogieDownGames {
 				dat.Add("dat", "aha");
 
 				NotificationCenter.DefaultCenter.PostNotification(this, "PlayAudioAtIndex" ,dat);
-			}
-			else
+
+			} else {
+				
 				m_isCurrentRoundLost = false;
+				m_lives = 3;
+			}
 			
 			if(m_lives <= 0) {
 				
