@@ -83,6 +83,12 @@ namespace BoogieDownGames {
 			set { m_highScore = value; }
 		}
 
+		public bool IsTutorialOn
+		{
+			get { return isTutorialOn; }
+			set { isTutorialOn = value; }
+		}
+
 		public int CurrentScore
 		{
 			get { return m_currentScore; }

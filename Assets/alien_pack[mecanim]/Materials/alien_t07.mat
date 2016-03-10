@@ -52,7 +52,7 @@ Material:
       data:
         first:
           name: _Outline
-        second: 0.13
+        second: 0.17
       data:
         first:
           name: _TexLod
@@ -109,7 +109,7 @@ Material:
       data:
         first:
           name: _OutlineColor
-        second: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+        second: {r: 0, g: 0, b: 0, a: 1}
       data:
         first:
           name: _RimColor

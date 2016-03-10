@@ -60,7 +60,7 @@ Material:
       data:
         first:
           name: _Outline
-        second: 0.26
+        second: 0.17
       data:
         first:
           name: _TexLod
