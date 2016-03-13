@@ -7,9 +7,8 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: alien_t15
-  m_Shader: {fileID: 4800000, guid: 0b36d287c15264e55901ede94db65e4f, type: 3}
-  m_ShaderKeywords: OUTLINE_BLENDING TCP2_OUTLINE_CONST_SIZE TCP2_RIMO TCP2_SPEC_TOON
-    TCP2_ZSMOOTH_ON
+  m_Shader: {fileID: 4800000, guid: dd496457a855aa341b0d7b7b475a7a3a, type: 3}
+  m_ShaderKeywords: OUTLINES TCP2_OUTLINE_CONST_SIZE TCP2_ZSMOOTH_ON
   m_LightmapFlags: 5
   m_CustomRenderQueue: 2000
   stringTagMap: {}
@@ -94,7 +93,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 0.588, g: 0.588, b: 0.588, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _SpecColor
@@ -110,7 +109,7 @@ Material:
       data:
         first:
           name: _OutlineColor
-        second: {r: 0, g: 0, b: 0, a: 1}
+        second: {r: 0.51408803, g: 0.3935986, b: 0.9558824, a: 1}
       data:
         first:
           name: _RimColor

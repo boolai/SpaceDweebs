@@ -7,8 +7,8 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: alien_t25
-  m_Shader: {fileID: 4800000, guid: 24a666c4cf4f5194ba2cdff51c1dc2f0, type: 3}
-  m_ShaderKeywords: OUTLINE_BLENDING TCP2_OUTLINE_CONST_SIZE
+  m_Shader: {fileID: 4800000, guid: dd496457a855aa341b0d7b7b475a7a3a, type: 3}
+  m_ShaderKeywords: OUTLINES TCP2_OUTLINE_CONST_SIZE
   m_LightmapFlags: 5
   m_CustomRenderQueue: 2000
   stringTagMap: {}
@@ -89,4 +89,4 @@ Material:
       data:
         first:
           name: _OutlineColor
-        second: {r: 0, g: 0, b: 0, a: 1}
+        second: {r: 0.6544118, g: 0.65441173, b: 0.120296285, a: 1}
