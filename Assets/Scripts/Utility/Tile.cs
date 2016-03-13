@@ -149,6 +149,7 @@ namespace BoogieDownGames {
 			if( gameObject.GetComponent<SimpleMove>() ) {
 				gameObject.GetComponent<SimpleMove>().SetSlowMode();
 			}
+			/*
 			var s = transform.localScale;
 			s.z = 1;
 			s.y = 1;
@@ -157,6 +158,7 @@ namespace BoogieDownGames {
 			scale.z = 1;
 			scale.x = 1;
 			scale.y = 1;
+			*/
 		
 		}
 
