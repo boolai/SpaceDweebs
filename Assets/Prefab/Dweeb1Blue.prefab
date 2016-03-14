@@ -89,6 +89,7 @@ GameObject:
   - 114: {fileID: 11401776}
   - 82: {fileID: 8207446}
   - 114: {fileID: 11477252}
+  - 95: {fileID: 9539338}
   m_Layer: 8
   m_Name: Dweeb1Blue
   m_TagString: Tile
@@ -135,7 +136,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 423098}
   - 33: {fileID: 3339962}
-  - 65: {fileID: 6576150}
   - 23: {fileID: 2322302}
   m_Layer: 0
   m_Name: Cube
@@ -1302,18 +1302,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 6.5, z: 8}
   m_Center: {x: 0, y: 1.04, z: 0}
---- !u!65 &6576150
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 122066}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &8207446
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1406,6 +1394,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &9539338
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115986}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cc2eb510cc9a94b10a163bb7fe4fc78e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11401776
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1432,7 +1437,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a044c1319e2c4483da4aeeac85b7f44d, type: 3}
   - {fileID: 8300000, guid: f76ec9971c5374e57b329c1ec6bfb86e, type: 3}
   - {fileID: 8300000, guid: 45782f51cc8cc40a5bc014c7ae4fca48, type: 3}
-  m_anime: {fileID: 9507586}
+  m_anime: {fileID: 9539338}
   m_audioSource: {fileID: 8207446}
   m_special: 0
   m_score: 50
