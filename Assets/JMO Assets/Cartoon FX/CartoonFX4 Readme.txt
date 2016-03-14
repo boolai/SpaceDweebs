@@ -1,5 +1,5 @@
-﻿Cartoon FX Pack 4, version 1.01
-2015/01/16
+﻿Cartoon FX Pack 4, version 1.03
+2015/12/19
 © 2015 - Jean Moreno
 ===============================
 
@@ -81,6 +81,16 @@ I'd be happy to see any effects used in your project, so feel free to drop me a 
 
 RELEASE NOTES
 -------------
+v1.03
+- fixed compilation warnings with Unity 5.3+
+- fixed CFX_AutoDestructShuriken not working with some prefabs (Unity 5.3.1)
+
+v1.02
+- put all shaders in the same folder
+- renamed some shaders
+- removed unused materials
+- fixed naming in mobile rain effects
+
 v1.01
 - fixed deprecated method warning in Unity 4.3+
 

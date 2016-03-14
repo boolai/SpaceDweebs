@@ -85,7 +85,7 @@ public class CFX_SpawnSystemEditor : Editor
 							if(o == otherObj)
 							{
 								already = true;
-								//Debug.LogWarning("CFX_SpawnSystem: Object has already been added: " + o.name);
+								Debug.LogWarning("CFX_SpawnSystem: Object has already been added: " + o.name);
 								break;
 							}
 						}

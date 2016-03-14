@@ -1,5 +1,5 @@
-﻿Cartoon FX Pack 3, version 1.16
-2015/01/16
+﻿Cartoon FX Pack 3, version 1.18
+2015/12/19
 © 2015 - Jean Moreno
 ===============================
 
@@ -73,6 +73,13 @@ I'd be happy to see any effects used in your project, so feel free to drop me a 
 
 RELEASE NOTES
 -------------
+v1.18
+- fixed compilation warnings with Unity 5.3+
+- fixed CFX_AutoDestructShuriken not working with some prefabs (Unity 5.3.1)
+
+v1.17
+- put all shaders in the same folder
+
 v1.16
 - fixed deprecated method warning in Unity 4.3+
 

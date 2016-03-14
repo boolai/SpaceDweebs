@@ -35,12 +35,12 @@ Material:
       data:
         first:
           name: _TintColor
-        second: {r: .501960814, g: .501960814, b: .501960814, a: .501960814}
+        second: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 0.5019608}
       data:
         first:
           name: _BaseColor
-        second: {r: 0, g: 0, b: 0, a: .392156869}
+        second: {r: 0, g: 0, b: 0, a: 0.39215687}
       data:
         first:
           name: _MaskColor
-        second: {r: .33088237, g: 0, b: 0, a: .392156869}
+        second: {r: 0.33088237, g: 0, b: 0, a: 0.39215687}

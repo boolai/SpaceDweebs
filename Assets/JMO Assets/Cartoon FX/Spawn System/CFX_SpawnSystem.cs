@@ -26,7 +26,7 @@ public class CFX_SpawnSystem : MonoBehaviour
 		
 		if(!instance.poolCursors.ContainsKey(uniqueId))
 		{
-			//Debug.LogError("[CFX_SpawnSystem.GetNextPoolObject()] Object hasn't been preloaded: " + sourceObj.name + " (ID:" + uniqueId + ")");
+			Debug.LogError("[CFX_SpawnSystem.GetNextPoolObject()] Object hasn't been preloaded: " + sourceObj.name + " (ID:" + uniqueId + ")");
 			return null;
 		}
 		
@@ -147,7 +147,7 @@ public class CFX_SpawnSystem : MonoBehaviour
 		
 		if(!instantiatedObjects.ContainsKey(uniqueId))
 		{
-			//Debug.LogWarning("[CFX_SpawnSystem.removeObjectsFromPool()] There aren't any preloaded object for: " + sourceObject.name + " (ID:" + uniqueId + ")");
+			Debug.LogWarning("[CFX_SpawnSystem.removeObjectsFromPool()] There aren't any preloaded object for: " + sourceObject.name + " (ID:" + uniqueId + ")");
 			return;
 		}
 		
@@ -167,7 +167,7 @@ public class CFX_SpawnSystem : MonoBehaviour
 	void Awake()
 	{
 		if(instance != null)
-			//Debug.LogWarning("CFX_SpawnSystem: There should only be one instance of CFX_SpawnSystem per Scene!");
+			Debug.LogWarning("CFX_SpawnSystem: There should only be one instance of CFX_SpawnSystem per Scene!");
 		
 		instance = this;
 	}

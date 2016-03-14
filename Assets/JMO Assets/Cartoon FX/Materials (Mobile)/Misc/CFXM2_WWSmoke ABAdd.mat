@@ -40,7 +40,7 @@ Material:
       data:
         first:
           name: _Shininess
-        second: .699999988
+        second: 0.7
       data:
         first:
           name: _InvFade
@@ -48,7 +48,7 @@ Material:
       data:
         first:
           name: _WiggleStrength
-        second: .00999999978
+        second: 0.01
       data:
         first:
           name: _TexCoordScrollX
@@ -88,9 +88,9 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _Emission
-        second: {r: 0, g: 0, b: 0, a: 0}
+          name: _TintColor
+        second: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 0.5019608}
       data:
         first:
-          name: _TintColor
-        second: {r: .501960814, g: .501960814, b: .501960814, a: .501960814}
+          name: _Emission
+        second: {r: 0, g: 0, b: 0, a: 0}
