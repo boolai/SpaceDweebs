@@ -1447,7 +1447,7 @@ MonoBehaviour:
   m_isAnimeDone: 0
   m_particleList:
   - m_particleType: 0
-    m_particle: {fileID: 0}
+    m_particle: {fileID: 102102, guid: 18ce6ab1c063c4179919d4aae6a43ed3, type: 2}
   - m_particleType: 1
     m_particle: {fileID: 199908, guid: 9cff485c989654d46a4013474027c95e, type: 2}
   m_isAnimeRunning: 0
@@ -1459,7 +1459,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107606}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1122a02ca19d26d428689a55ddd4ae03, type: 3}
   m_Name: 

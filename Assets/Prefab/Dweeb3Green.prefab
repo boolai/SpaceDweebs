@@ -728,7 +728,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165942}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: -0.76, y: 0.12, z: -0}
+  m_LocalPosition: {x: -19.39, y: 0.12, z: 0}
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children:
   - {fileID: 459060}
@@ -1413,7 +1413,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165942}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1122a02ca19d26d428689a55ddd4ae03, type: 3}
   m_Name: 
@@ -1460,7 +1460,7 @@ MonoBehaviour:
   m_isAnimeDone: 0
   m_particleList:
   - m_particleType: 0
-    m_particle: {fileID: 161646, guid: 8f2bdcfd33d454d6b9d6c3844428ee70, type: 2}
+    m_particle: {fileID: 184816, guid: e875b48c75727489b81f552384d3ae88, type: 2}
   - m_particleType: 1
     m_particle: {fileID: 199908, guid: 9cff485c989654d46a4013474027c95e, type: 2}
   m_isAnimeRunning: 0

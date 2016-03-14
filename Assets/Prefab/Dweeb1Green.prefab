@@ -1459,7 +1459,7 @@ MonoBehaviour:
   m_isAnimeDone: 0
   m_particleList:
   - m_particleType: 0
-    m_particle: {fileID: 164786, guid: e63b18762a391477887a4449a26179ae, type: 2}
+    m_particle: {fileID: 135574, guid: 8214f78462c4242fcb5c8760ee4082fe, type: 2}
   - m_particleType: 1
     m_particle: {fileID: 199908, guid: 9cff485c989654d46a4013474027c95e, type: 2}
   m_isAnimeRunning: 0

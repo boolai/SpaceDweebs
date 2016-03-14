@@ -1445,7 +1445,7 @@ MonoBehaviour:
   m_isAnimeDone: 0
   m_particleList:
   - m_particleType: 0
-    m_particle: {fileID: 140292, guid: 3cdd3dbe94d1549e3b9c236fc8c86616, type: 2}
+    m_particle: {fileID: 131458, guid: e1a4223494ca24b81a2710e5c1ff332a, type: 2}
   - m_particleType: 1
     m_particle: {fileID: 199908, guid: 9cff485c989654d46a4013474027c95e, type: 2}
   m_isAnimeRunning: 0

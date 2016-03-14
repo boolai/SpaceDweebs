@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 477410}
   - 198: {fileID: 19804422}
   - 199: {fileID: 19906782}
-  - 114: {fileID: 11453878}
+  - 114: {fileID: 11440034}
   m_Layer: 0
   m_Name: CFXM2_PickupDiamonddb2yellow
   m_TagString: Untagged
@@ -120,7 +120,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 477410}
   m_RootOrder: 2
---- !u!114 &11453878
+--- !u!114 &11440034
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -128,10 +128,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 102102}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fd2e8874f60266498a388d7229a1bac, type: 3}
+  m_Script: {fileID: 11500000, guid: 466dcf02a273c4acf8b0d832a477018b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnlyDeactivate: 0
+  m_deathType: 2
+  m_myClockType: 1
+  m_timeTillDeath: 1.5
+  m_isAutomated: 1
+  m_isOnFIxedUpdate: 0
+  m_itrClock:
+    m_timeLimit: 1.5
+    m_counter: 1.5
+    m_isDone: 0
+    m_isStopped: 0
 --- !u!198 &19804422
 ParticleSystem:
   m_ObjectHideFlags: 1
