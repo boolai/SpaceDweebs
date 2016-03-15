@@ -84,10 +84,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 441540}
   - 33: {fileID: 3327318}
-  - 65: {fileID: 6547722}
   - 23: {fileID: 2383282}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,6 +180,7 @@ GameObject:
   - 114: {fileID: 11446816}
   - 82: {fileID: 8279424}
   - 114: {fileID: 11474992}
+  - 95: {fileID: 9526088}
   m_Layer: 8
   m_Name: Dweeb1Red
   m_TagString: Tile
@@ -1290,18 +1290,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
---- !u!65 &6547722
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105838}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6552090
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1398,10 +1386,27 @@ Animator:
   m_GameObject: {fileID: 124178}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 5d19e18a32445ab4fae5e4d9afda7dc4, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 43242c06bf17a4da39554ae507955972, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &9526088
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121838}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cc2eb510cc9a94b10a163bb7fe4fc78e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -1432,7 +1437,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7a8c6702d33c0404eb2e37743f45a207, type: 3}
   - {fileID: 8300000, guid: cc223544e8caa4020a54a28cd63bb5ef, type: 3}
   - {fileID: 8300000, guid: f76ec9971c5374e57b329c1ec6bfb86e, type: 3}
-  m_anime: {fileID: 0}
+  m_anime: {fileID: 9526088}
   m_audioSource: {fileID: 8279424}
   m_special: 0
   m_score: 50
@@ -1449,7 +1454,7 @@ MonoBehaviour:
   - m_particleType: 1
     m_particle: {fileID: 199908, guid: 9cff485c989654d46a4013474027c95e, type: 2}
   m_isAnimeRunning: 0
-  m_body: {fileID: 0}
+  m_body: {fileID: 121838}
   m_rBody: {fileID: 5416718}
 --- !u!114 &11474992
 MonoBehaviour:

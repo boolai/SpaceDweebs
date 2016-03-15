@@ -40,7 +40,7 @@ GameObject:
   - 4: {fileID: 442588}
   - 95: {fileID: 9545946}
   m_Layer: 0
-  m_Name: alien_1 (3)
+  m_Name: alien_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -450,6 +450,7 @@ GameObject:
   - 114: {fileID: 11415584}
   - 82: {fileID: 8274284}
   - 114: {fileID: 11400416}
+  - 95: {fileID: 9587028}
   m_Layer: 8
   m_Name: Dweeb1Purple
   m_TagString: Tile
@@ -661,10 +662,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 427100}
   - 33: {fileID: 3369338}
-  - 65: {fileID: 6549556}
   - 23: {fileID: 2376346}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -881,7 +881,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104702}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08888889, y: -1.1414332, z: 0}
+  m_LocalPosition: {x: 0.08888889, y: -0.73, z: 0}
   m_LocalScale: {x: 1.1111112, y: 1.1111112, z: 1.1111112}
   m_Children:
   - {fileID: 464472}
@@ -1302,18 +1302,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 6.5, z: 8}
   m_Center: {x: 0, y: 1.04, z: 0}
---- !u!65 &6549556
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 195830}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &8274284
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1398,10 +1386,27 @@ Animator:
   m_GameObject: {fileID: 104702}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 5d19e18a32445ab4fae5e4d9afda7dc4, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 91db7931983724ada962bd1cbcd9a25c, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &9587028
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157408}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cc2eb510cc9a94b10a163bb7fe4fc78e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -1446,7 +1451,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cc223544e8caa4020a54a28cd63bb5ef, type: 3}
   - {fileID: 8300000, guid: f76ec9971c5374e57b329c1ec6bfb86e, type: 3}
   - {fileID: 8300000, guid: 45782f51cc8cc40a5bc014c7ae4fca48, type: 3}
-  m_anime: {fileID: 0}
+  m_anime: {fileID: 9587028}
   m_audioSource: {fileID: 8274284}
   m_special: 0
   m_score: 50
