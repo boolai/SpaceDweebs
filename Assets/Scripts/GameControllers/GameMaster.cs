@@ -1245,7 +1245,8 @@ namespace BoogieDownGames {
 		{
 			foreach(int i in m_sequence) {
 				//make sure the spawner it is in is cleared
-				m_liveObjects[i].SetActive(false);
+				//m_liveObjects[i].SetActive(false);
+				m_liveObjects[i].GetComponent<Tile>().PlayAnimation(TileAnimations.Success);
 				m_liveObjects[i].transform.Translate(new Vector3(100000,100000,10000));
 			}
 		}
