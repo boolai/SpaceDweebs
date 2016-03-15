@@ -101,16 +101,7 @@ namespace BoogieDownGames {
 			get { return m_isAnimeDone; }
 			set { m_isAnimeDone = value; }
 		}
-
-		[SerializeField]
-		private GameObject m_body;
-
-		public GameObject Body
-		{
-			get { return m_body; }
-			set { m_body = value; }
-		}
-
+			
 		[SerializeField]
 		private Rigidbody m_rBody;
 
@@ -119,7 +110,7 @@ namespace BoogieDownGames {
 			NotificationCenter.DefaultCenter.AddObserver(this, "PlayAnimationMessage");
 			NotificationCenter.DefaultCenter.AddObserver(this, "DestroyUfo");
 			NotificationCenter.DefaultCenter.AddObserver(this, "GameStateGlobalUpdate");
-		//NotificationCenter.DefaultCenter.AddObserver(this, "PlayAudioAtIndex");
+			//NotificationCenter.DefaultCenter.AddObserver(this, "PlayAudioAtIndex");
 
 			foreach(ParticleAttributes p in m_particleList) {
 				if(!m_particlesBank.ContainsKey(p.TypeParticle.ToString())) {
@@ -149,26 +140,17 @@ namespace BoogieDownGames {
 			if( gameObject.GetComponent<SimpleMove>() ) {
 				gameObject.GetComponent<SimpleMove>().SetSlowMode();
 			}
-			/*
-			var s = transform.localScale;
-			s.z = 1;
-			s.y = 1;
-			s.x = 1;
-			var scale = m_body.transform.localScale;
-			scale.z = 1;
-			scale.x = 1;
-			scale.y = 1;
-			*/
-		
 		}
 
 		void GameStateGlobalUpdate()
 		{
+			/*
 			try {
 				m_anime.SetFloat("ySpeed",m_rBody.velocity.y);
 			} catch(UnassignedReferenceException p_err) {
 				Debug.LogWarning(p_err.Message + " On " + gameObject.name); 
 			}
+			*/
 		}
 
 		/// <summary>

@@ -602,7 +602,6 @@ GameObject:
   - 114: {fileID: 11416308}
   - 95: {fileID: 9552792}
   - 82: {fileID: 8299584}
-  - 114: {fileID: 11453316}
   m_Layer: 8
   m_Name: Dweeb3Orange
   m_TagString: Tile
@@ -1455,22 +1454,7 @@ MonoBehaviour:
   - m_particleType: 1
     m_particle: {fileID: 199908, guid: 9cff485c989654d46a4013474027c95e, type: 2}
   m_isAnimeRunning: 0
-  m_body: {fileID: 0}
   m_rBody: {fileID: 5439246}
---- !u!114 &11453316
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 194328}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1122a02ca19d26d428689a55ddd4ae03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Anim: {fileID: 0}
-  RandomCounter: 0
-  RanNumb: 0
 --- !u!137 &13772902
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

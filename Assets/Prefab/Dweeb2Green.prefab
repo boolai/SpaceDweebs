@@ -329,7 +329,6 @@ GameObject:
   - 65: {fileID: 6591788}
   - 114: {fileID: 11437486}
   - 82: {fileID: 8251194}
-  - 114: {fileID: 11453400}
   - 95: {fileID: 9526736}
   m_Layer: 8
   m_Name: Dweeb2Green
@@ -1440,7 +1439,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7a8c6702d33c0404eb2e37743f45a207, type: 3}
   - {fileID: 8300000, guid: cc223544e8caa4020a54a28cd63bb5ef, type: 3}
   - {fileID: 8300000, guid: f76ec9971c5374e57b329c1ec6bfb86e, type: 3}
-  m_anime: {fileID: 0}
+  m_anime: {fileID: 9526736}
   m_audioSource: {fileID: 8251194}
   m_special: 0
   m_score: 50
@@ -1457,22 +1456,7 @@ MonoBehaviour:
   - m_particleType: 1
     m_particle: {fileID: 199908, guid: 9cff485c989654d46a4013474027c95e, type: 2}
   m_isAnimeRunning: 0
-  m_body: {fileID: 0}
   m_rBody: {fileID: 5441746}
---- !u!114 &11453400
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157392}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1122a02ca19d26d428689a55ddd4ae03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Anim: {fileID: 0}
-  RandomCounter: 0
-  RanNumb: 0
 --- !u!137 &13761456
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

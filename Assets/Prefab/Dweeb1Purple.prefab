@@ -449,7 +449,6 @@ GameObject:
   - 65: {fileID: 6506050}
   - 114: {fileID: 11415584}
   - 82: {fileID: 8274284}
-  - 114: {fileID: 11400416}
   - 95: {fileID: 9587028}
   m_Layer: 8
   m_Name: Dweeb1Purple
@@ -1411,20 +1410,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11400416
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157408}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1122a02ca19d26d428689a55ddd4ae03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Anim: {fileID: 0}
-  RandomCounter: 0
-  RanNumb: 0
 --- !u!114 &11415584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1468,7 +1453,6 @@ MonoBehaviour:
   - m_particleType: 1
     m_particle: {fileID: 199908, guid: 9cff485c989654d46a4013474027c95e, type: 2}
   m_isAnimeRunning: 0
-  m_body: {fileID: 0}
   m_rBody: {fileID: 5419826}
 --- !u!137 &13722642
 SkinnedMeshRenderer:
