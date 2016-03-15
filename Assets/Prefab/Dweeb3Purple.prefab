@@ -226,7 +226,7 @@ GameObject:
   - 4: {fileID: 418062}
   - 95: {fileID: 9569878}
   m_Layer: 0
-  m_Name: alien_3 (4)
+  m_Name: alien_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -571,10 +571,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 415318}
   - 33: {fileID: 3384240}
-  - 65: {fileID: 6589990}
   - 23: {fileID: 2368952}
   m_Layer: 0
-  m_Name: Cube (12)
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1304,18 +1303,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 6.5, z: 8}
   m_Center: {x: 0, y: 1.04, z: 0}
---- !u!65 &6589990
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183614}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &8230278
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1400,7 +1387,7 @@ Animator:
   m_GameObject: {fileID: 150340}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ce91a486f36078c478be698aeeb5fad0, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d45138feb340346299724022ee6f3679, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -1417,7 +1404,7 @@ Animator:
   m_GameObject: {fileID: 123510}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6f53c48635bc54b0986110376c84909f, type: 2}
+  m_Controller: {fileID: 9100000, guid: df4e74365e35047e09a26cd4410a7784, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

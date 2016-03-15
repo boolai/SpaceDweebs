@@ -251,7 +251,7 @@ GameObject:
   - 4: {fileID: 415846}
   - 95: {fileID: 9514276}
   m_Layer: 0
-  m_Name: alien_2 (1)
+  m_Name: alien_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -330,6 +330,7 @@ GameObject:
   - 114: {fileID: 11437486}
   - 82: {fileID: 8251194}
   - 114: {fileID: 11453400}
+  - 95: {fileID: 9526736}
   m_Layer: 8
   m_Name: Dweeb2Green
   m_TagString: Tile
@@ -376,10 +377,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 467980}
   - 33: {fileID: 3381688}
-  - 65: {fileID: 6542616}
   - 23: {fileID: 2302508}
   m_Layer: 0
-  m_Name: Cube (5)
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1292,18 +1292,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
---- !u!65 &6542616
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164446}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6591788
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1400,10 +1388,27 @@ Animator:
   m_GameObject: {fileID: 142844}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 2b232be313137344d9066ba180c690a8, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fed70c5ee0f564372957105cd9343bf5, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &9526736
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157392}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f71ba9cbb88e14756bf738d51cd6f917, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1

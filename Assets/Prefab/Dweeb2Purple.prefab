@@ -43,6 +43,7 @@ GameObject:
   - 114: {fileID: 11478906}
   - 82: {fileID: 8230288}
   - 114: {fileID: 11473218}
+  - 95: {fileID: 9587948}
   m_Layer: 8
   m_Name: Dweeb2Purple
   m_TagString: Tile
@@ -90,7 +91,7 @@ GameObject:
   - 4: {fileID: 493132}
   - 95: {fileID: 9538944}
   m_Layer: 0
-  m_Name: alien_2 (4)
+  m_Name: alien_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -360,10 +361,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 472588}
   - 33: {fileID: 3363748}
-  - 65: {fileID: 6594960}
   - 23: {fileID: 2308736}
   m_Layer: 0
-  m_Name: Cube (7)
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1304,18 +1304,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 6.5, z: 8}
   m_Center: {x: 0, y: 1.04, z: 0}
---- !u!65 &6594960
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157298}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &8230288
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1400,10 +1388,27 @@ Animator:
   m_GameObject: {fileID: 122344}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 2b232be313137344d9066ba180c690a8, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0b6f9b78847b840129cde71edfdff161, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &9587948
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108996}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f71ba9cbb88e14756bf738d51cd6f917, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1

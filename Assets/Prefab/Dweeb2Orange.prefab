@@ -249,10 +249,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 465898}
   - 33: {fileID: 3399052}
-  - 65: {fileID: 6554318}
   - 23: {fileID: 2307162}
   m_Layer: 0
-  m_Name: Cube (6)
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -298,7 +297,7 @@ GameObject:
   - 4: {fileID: 405918}
   - 95: {fileID: 9522298}
   m_Layer: 0
-  m_Name: alien_2 (2)
+  m_Name: alien_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -438,6 +437,7 @@ GameObject:
   - 114: {fileID: 11446550}
   - 82: {fileID: 8270698}
   - 114: {fileID: 11469378}
+  - 95: {fileID: 9588264}
   m_Layer: 8
   m_Name: Dweeb2Orange
   m_TagString: Tile
@@ -1304,18 +1304,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 6.5, z: 8}
   m_Center: {x: 0, y: 1.04, z: 0}
---- !u!65 &6554318
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134288}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &8270698
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1400,10 +1388,27 @@ Animator:
   m_GameObject: {fileID: 136650}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 2b232be313137344d9066ba180c690a8, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: efcf1e404bacb426fba4569482cf6140, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &9588264
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160674}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f71ba9cbb88e14756bf738d51cd6f917, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
