@@ -1236,7 +1236,9 @@ namespace BoogieDownGames {
 						}
 
 					}
-					SendEvent(tile.Special.ToString());
+					if(tile) {
+						SendEvent(tile.Special.ToString());
+					}
 				}
 			}
 		}
