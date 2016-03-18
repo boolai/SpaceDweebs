@@ -11,7 +11,9 @@ namespace BoogieDownGames {
 		// Use this for initialization
 		void Start () 
 		{
-			m_anime = GetComponent<Animator>();
+			if(!m_anime) {
+				m_anime = GetComponent<Animator>();
+			}
 			NotificationCenter.DefaultCenter.AddObserver(this,"GameOver");
 		}
 
