@@ -598,13 +598,12 @@ namespace BoogieDownGames {
 					var tile = m_liveObjects[index].GetComponent<Tile>();
 					m_endTurnSequenceClock.IsDone = false;
 					m_endTurnSequenceClock.ResetClock();
-					m_sequenceCounter++;
-					
+
 					switch(tile.Special) {
 						
 					case TileSpecial.Bomb:
 						
-						if(m_isCurrentRoundLost == true && tile.Pressed) {
+						if(m_isCurrentRoundLost == true) {
 							
 							tile.PlayAnimation(TileAnimations.Failed);
 							//play a sound
@@ -621,7 +620,7 @@ namespace BoogieDownGames {
 						
 					case TileSpecial.Bonus:
 
-						if(m_isCurrentRoundLost == true && tile.Pressed) {
+						if(m_isCurrentRoundLost == true) {
 							
 							tile.PlayAnimation(TileAnimations.Failed);
 							//CurrentScore -= tile.Score;
@@ -639,7 +638,7 @@ namespace BoogieDownGames {
 						
 					case TileSpecial.ExtraLife:
 						
-						if(m_isCurrentRoundLost == true && tile.Pressed) {
+						if(m_isCurrentRoundLost == true) {
 							
 							tile.PlayAnimation(TileAnimations.Failed);
 							//play a sound
@@ -657,7 +656,7 @@ namespace BoogieDownGames {
 						
 					case TileSpecial.Multiplier:
 						
-						if(m_isCurrentRoundLost == true && tile.Pressed) {
+						if(m_isCurrentRoundLost == true) {
 							
 							tile.PlayAnimation(TileAnimations.Failed);
 							//play a sound
@@ -675,7 +674,7 @@ namespace BoogieDownGames {
 						
 					case TileSpecial.None:
 						
-						if(m_isCurrentRoundLost == true && tile.Pressed) {
+						if(m_isCurrentRoundLost == true) {
 							
 							tile.PlayAnimation(TileAnimations.Failed);
 							//play a sound
@@ -694,7 +693,7 @@ namespace BoogieDownGames {
 						
 					case TileSpecial.Repeatable:
 						
-						if(m_isCurrentRoundLost == true && tile.Pressed) {
+						if(m_isCurrentRoundLost == true) {
 							
 							tile.PlayAnimation(TileAnimations.Failed);
 							//play a sound
@@ -712,7 +711,7 @@ namespace BoogieDownGames {
 						
 					case TileSpecial.SlowMo:
 						
-						if(m_isCurrentRoundLost == true && tile.Pressed) {
+						if(m_isCurrentRoundLost == true) {
 							
 							tile.PlayAnimation(TileAnimations.Failed);
 							//play a sound
@@ -733,6 +732,7 @@ namespace BoogieDownGames {
 						
 						break;
 					}
+					m_sequenceCounter++;
 				}
 			}
 		}
