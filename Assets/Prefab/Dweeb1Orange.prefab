@@ -162,6 +162,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 411048}
   - 95: {fileID: 9586282}
+  - 114: {fileID: 11406094}
   m_Layer: 0
   m_Name: alien_1
   m_TagString: Untagged
@@ -227,6 +228,7 @@ GameObject:
   - 114: {fileID: 11454832}
   - 82: {fileID: 8241056}
   - 95: {fileID: 9512700}
+  - 114: {fileID: 11450684}
   m_Layer: 8
   m_Name: Dweeb1Orange
   m_TagString: Tile
@@ -1410,6 +1412,30 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11406094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635c4ee85bd0a4c11a71196891223e72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_anime: {fileID: 0}
+--- !u!114 &11450684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635c4ee85bd0a4c11a71196891223e72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_anime: {fileID: 0}
 --- !u!114 &11454832
 MonoBehaviour:
   m_ObjectHideFlags: 1
