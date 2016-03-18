@@ -451,7 +451,6 @@ GameObject:
   - 114: {fileID: 11415584}
   - 82: {fileID: 8274284}
   - 95: {fileID: 9587028}
-  - 114: {fileID: 11428218}
   m_Layer: 8
   m_Name: Dweeb1Purple
   m_TagString: Tile
@@ -1468,18 +1467,6 @@ MonoBehaviour:
     m_particle: {fileID: 199908, guid: 9cff485c989654d46a4013474027c95e, type: 2}
   m_isAnimeRunning: 0
   m_rBody: {fileID: 5419826}
---- !u!114 &11428218
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 635c4ee85bd0a4c11a71196891223e72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_anime: {fileID: 0}
 --- !u!137 &13722642
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

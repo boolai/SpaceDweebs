@@ -43,7 +43,6 @@ GameObject:
   - 114: {fileID: 11453992}
   - 82: {fileID: 8241996}
   - 95: {fileID: 9553376}
-  - 114: {fileID: 11417898}
   m_Layer: 8
   m_Name: Dweeb3Yellow
   m_TagString: Tile
@@ -1413,18 +1412,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11417898
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 110054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 635c4ee85bd0a4c11a71196891223e72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_anime: {fileID: 0}
 --- !u!114 &11453992
 MonoBehaviour:
   m_ObjectHideFlags: 1
