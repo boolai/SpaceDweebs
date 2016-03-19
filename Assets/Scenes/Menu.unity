@@ -1959,7 +1959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_soundClips:
-  - {fileID: 8300000, guid: 2d496930d454d4a6cbfc79641e3f1c1d, type: 3}
+  - {fileID: 8300000, guid: a08d904383fa847a2a8bbdd27e7df599, type: 3}
   m_initialSound: 0
   m_currentIndex: 0
   m_prevIndex: 0

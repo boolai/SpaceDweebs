@@ -79,7 +79,7 @@ namespace BoogieDownGames {
 			m_loadingScreenPanel.SetActive(true);
 			AsyncOperation aysc = SceneManager.LoadSceneAsync(p_level);
 			while(!aysc.isDone) {
-				m_transitionSlider.value = aysc.progress * 100;
+				//m_transitionSlider.value = aysc.progress * 100;
 				yield return null;
 			}
 		}
