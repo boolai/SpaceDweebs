@@ -412,14 +412,18 @@ namespace BoogieDownGames {
 		public void GameStateCompTurnExit()
 		{
 
-			Hashtable d = new Hashtable();
-			d.Add("dat","ReadyGoPart");
-			NotificationCenter.DefaultCenter.PostNotification(this,"SpawnSpecialItem",d);
-			Hashtable dat = new Hashtable();
-			dat.Add("dat", "gogogo");
+			if(GameFSM.NextState != GameStatePause.Instance) {
 
-			NotificationCenter.DefaultCenter.PostNotification(this, "PlayAudioAtIndex" ,dat);
-			MyTimeMode.NoTimeModeRunning();
+				Hashtable d = new Hashtable();
+				d.Add("dat","ReadyGoPart");
+				NotificationCenter.DefaultCenter.PostNotification(this,"SpawnSpecialItem",d);
+				Hashtable dat = new Hashtable();
+				dat.Add("dat", "gogogo");
+
+				NotificationCenter.DefaultCenter.PostNotification(this, "PlayAudioAtIndex" ,dat);
+				MyTimeMode.NoTimeModeRunning();
+
+			}
 		}
 
 		/// <summary>

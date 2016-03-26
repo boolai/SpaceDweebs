@@ -9,6 +9,7 @@ public class FiniteStateMachine <T>  {
 	private T Owner;
 	private FSMState<T> m_currentState;
 	private FSMState<T> m_previousState;
+	private FSMState<T> m_nextState;
 	private FSMState<T> m_globalState; //A state to go to when things go crazy
 	private FSMState<T> m_sentinelState; // A buffer state to hold a non exited state
 
@@ -31,6 +32,12 @@ public class FiniteStateMachine <T>  {
 	{
 		get{ return m_globalState; }
 		set{ m_globalState = value; }
+	}
+
+	public FSMState<T> NextState
+	{
+		get{ return m_nextState; }
+		set{ m_nextState = value; }
 	}
 
 	#endregion
@@ -61,6 +68,7 @@ public class FiniteStateMachine <T>  {
 	
 	public void  ChangeState(FSMState<T> NewState)
 	{	
+		m_nextState = NewState;
 		m_previousState = m_currentState;
 		
 		if (m_currentState != null)
