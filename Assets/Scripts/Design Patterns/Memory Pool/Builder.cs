@@ -7,7 +7,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System;
-using UnityEngine.Networking;
 
 
 namespace BoogieDownGames
@@ -138,7 +137,7 @@ namespace BoogieDownGames
 					m_name = m_prefab.name;
 					for(int index = 0; index < m_buffer; index++) {
 						if(m_isNetworked) {
-							NetworkServer.Spawn(m_prefab);
+							//NetworkServer.Spawn(m_prefab);
 						} else {
 							GameObject obj = GameObject.Instantiate(m_prefab,Vector3.zero, Quaternion.identity) as GameObject;
 							obj.SetActive(m_initialState);
@@ -188,7 +187,7 @@ namespace BoogieDownGames
 			if(m_prefab != null) {
 				for(int index = 0; index < p_amount; ++index) {
 					if(m_isNetworked) {
-						NetworkServer.Spawn(m_prefab);
+						//NetworkServer.Spawn(m_prefab);
 					} else {
 						GameObject obj = MonoBehaviour.Instantiate(m_prefab) as GameObject;
 						obj.SetActive(m_initialState);

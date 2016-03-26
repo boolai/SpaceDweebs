@@ -8,7 +8,6 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System;
-using UnityEngine.Networking;
 
 namespace BoogieDownGames {
 
@@ -179,7 +178,7 @@ namespace BoogieDownGames {
 					//Wake it up
 					obj.SetActive(true);
 					if(m_isNetworked) {
-						NetworkServer.Spawn(obj);
+						//NetworkServer.Spawn(obj);
 					}
 					//add it from live objects
 					//face the camera
