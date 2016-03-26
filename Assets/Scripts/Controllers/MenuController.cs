@@ -23,7 +23,7 @@ namespace BoogieDownGames {
 		private bool m_canTouchMenu;
 
 		[SerializeField]
-		private Slider m_transitionSlider;
+		private Toggle m_toggle;
 
 		[SerializeField]
 		private GameObject m_loadingScreenPanel;
@@ -35,8 +35,15 @@ namespace BoogieDownGames {
 			StartCoroutine( RandSpawn(r) );
 		}
 
+		void Start()
+		{
+			m_toggle.isOn = GameMaster.Instance.isTutorialOn;
+
+		}
+
 		public void ChangeScene(string p_scene)
 		{
+			
 			/*
 			if(m_canTouchMenu) {
 				StartCoroutine(Transition(m_transitionDelay, p_scene));
