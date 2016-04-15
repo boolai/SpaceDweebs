@@ -1511,7 +1511,7 @@ namespace BoogieDownGames {
 					GameFSM.ChangeState(GameStateIdle.Instance);
 					return;
 				}
-
+				Time.timeScale = 1.0f;
 				break;
 				
 			case "Menu":
@@ -1522,6 +1522,7 @@ namespace BoogieDownGames {
 					GameFSM.ChangeState(GameStateIdle.Instance);
 					return;
 				}
+				Time.timeScale = 1.0f;
 				break;
 				
 			case "Game":
