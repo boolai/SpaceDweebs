@@ -6402,7 +6402,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Tap the dweebs in sequence in order to complete the round. Let the battery
-    ran out and it's game over!
+    run out and it's game over!
 --- !u!222 &1325227256
 CanvasRenderer:
   m_ObjectHideFlags: 0

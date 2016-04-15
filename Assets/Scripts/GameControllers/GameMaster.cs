@@ -149,7 +149,7 @@ namespace BoogieDownGames {
 			this.SetNotifications();
 			
 			this.HasControl = false;
-			MyTimeMode.SetMode(CurrentTimeMode.Normal);
+			//MyTimeMode.SetMode(CurrentTimeMode.Normal);
 
 			loadPlayerData();
 
@@ -190,7 +190,7 @@ namespace BoogieDownGames {
 				m_liveObjects.Clear();
 				m_inSeqBank.Clear();
 				m_ufoTimer.ResetClock();
-				MyTimeMode.NoTimeModeRunning();
+				//MyTimeMode.NoTimeModeRunning();
 				m_isGameSetupDone = true;
 				CurrentScore = 0;
 			}
@@ -207,7 +207,7 @@ namespace BoogieDownGames {
 		public void GameStateIdleUpdate()
 		{
 
-			MyTimeMode.NoTimeModeRunning();
+			//MyTimeMode.NoTimeModeRunning();
 			if(Input.anyKey && SceneManager.GetActiveScene().name == "Splash") {
 				UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
 			}
@@ -234,7 +234,7 @@ namespace BoogieDownGames {
 		/// </summary>
 		public void GameStateIdleExit()
 		{
-			MyTimeMode.NoTimeModeRunning();
+			//MyTimeMode.NoTimeModeRunning();
 		}
 
 		/// <summary>
@@ -252,7 +252,7 @@ namespace BoogieDownGames {
 
 				//Set up the ufo speed  mode
 				NotificationCenter.DefaultCenter.PostNotification(this, "SetSlowMode");
-				MyTimeMode.NoTimeModeRunning();
+				//MyTimeMode.NoTimeModeRunning();
 				
 
 				if(CurrentWave == 1) {
@@ -324,7 +324,7 @@ namespace BoogieDownGames {
 		
 		public void GameStateSetUpUpdate()
 		{
-			MyTimeMode.NoTimeModeRunning();
+			//MyTimeMode.NoTimeModeRunning();
 			////Debug.LogError("I am in setup");
 			
 			//Run the set up clock
@@ -347,13 +347,13 @@ namespace BoogieDownGames {
 		public void GameStateSetUpExit()
 		{
 			//Debug.LogError("Game setup  exit ****** being called");
-			MyTimeMode.NoTimeModeRunning();
+			//MyTimeMode.NoTimeModeRunning();
 		}
 
 		public void GameStateCompTurnEnter()
 		{
 
-			MyTimeMode.NoTimeModeRunning();
+			//MyTimeMode.NoTimeModeRunning();
 			//Reset the counter
 			m_sequenceCounter = 0;
 			//Reset the clock
@@ -374,7 +374,7 @@ namespace BoogieDownGames {
 		public void GameStateCompTurnUpdate()
 		{
 			//Debug.LogError("Computer turn update");
-			MyTimeMode.NoTimeModeRunning();
+			//MyTimeMode.NoTimeModeRunning();
 
 			//Go through each sequence and play it
 			m_sequenceClock.Run();
@@ -421,7 +421,7 @@ namespace BoogieDownGames {
 				dat.Add("dat", "gogogo");
 
 				NotificationCenter.DefaultCenter.PostNotification(this, "PlayAudioAtIndex" ,dat);
-				MyTimeMode.NoTimeModeRunning();
+				//MyTimeMode.NoTimeModeRunning();
 
 			}
 		}
@@ -436,7 +436,7 @@ namespace BoogieDownGames {
 			Hashtable dat = new Hashtable();
 			dat.Add("event", "PlayerTurn");
 			NotificationCenter.DefaultCenter.PostNotification(this, "PlayEvent",dat);
-			MyTimeMode.NoTimeModeRunning();
+			//MyTimeMode.NoTimeModeRunning();
 
 			if(GameFSM.PreviousState == GameStateCompTurn.Instance) {
 				m_sequenceCounter = 0;
@@ -453,7 +453,7 @@ namespace BoogieDownGames {
 		public void GameStatePlayersTurnUpdate()
 		{
 			//Debug.LogError("Players turn update");
-			MyTimeMode.RunTimeMode();
+			//MyTimeMode.RunTimeMode();
 			//Check the clock 
 			m_playerTurnClock.Run();
 			if(m_playerTurnClock.Counter < (m_playerTurnClock.TimeLimit * 0.25f)) {
@@ -515,7 +515,7 @@ namespace BoogieDownGames {
 
 
 
-			MyTimeMode.NoTimeModeRunning();
+			//MyTimeMode.NoTimeModeRunning();
 		}
 
 		/// <summary>
@@ -524,7 +524,7 @@ namespace BoogieDownGames {
 		public void GameStateEndTurnEnter()
 		{
 
-			MyTimeMode.NoTimeModeRunning();
+			//MyTimeMode.NoTimeModeRunning();
 			//Check to see if the sequence is done
 			NotificationCenter.DefaultCenter.PostNotification(this,"DestroyUfo");
 
@@ -560,7 +560,7 @@ namespace BoogieDownGames {
 		
 		public void GameStateEndTurnUpdate()
 		{
-			MyTimeMode.NoTimeModeRunning();
+			//MyTimeMode.NoTimeModeRunning();
 			//Go through each sequence and play it
 			m_endTurnSequenceClock.Run();
 			
@@ -775,7 +775,7 @@ namespace BoogieDownGames {
 
 			CurrentWave++;
 
-			MyTimeMode.NoTimeModeRunning();
+			//MyTimeMode.NoTimeModeRunning();
 			m_isGameSetupDone = true;
 			//Debug.LogError("Game end turn exit");
 
@@ -1068,7 +1068,7 @@ namespace BoogieDownGames {
 								
 							case TileSpecial.SlowMo:
 
-								MyTimeMode.SetMode(CurrentTimeMode.SlowMo);
+								//MyTimeMode.SetMode(CurrentTimeMode.SlowMo);
 								m_sequenceCounter++;
 								messDat.Clear();
 								messDat.Add("dat","SlowMoMess");
@@ -1226,7 +1226,7 @@ namespace BoogieDownGames {
 								tile.PlayAnimation(TileAnimations.WrongTouch);
 								tile.PlayAudioClip(1);
 								
-								MyTimeMode.SetMode(CurrentTimeMode.Fast);
+								//MyTimeMode.SetMode(CurrentTimeMode.Fast);
 
 								m_scoreMultiplier = 1;
 								messDat.Clear();

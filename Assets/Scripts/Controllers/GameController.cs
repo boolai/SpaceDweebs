@@ -7,18 +7,27 @@ namespace BoogieDownGames {
 
 	public class GameController : UnitySingleton<GameController> {
 
+		[SerializeField]
+		private Canvas canvas;
 
 		void Start()
 		{
 
 		}
 
+		void Update()
+		{
+			Debug.LogError(Time.timeScale);
+		}
+
 		public void PauseGame()
 		{
 			//GameMaster.Instance.Pause();
 			//GameMaster.Instance.MyTimeMode.Pause();
-			GameMaster.Instance.GameFSM.ChangeState(GameStatePause.Instance);
-			//Time.timeScale = 0f;
+			//GameMaster.Instance.GameFSM.ChangeState(GameStatePause.Instance);
+
+			Time.timeScale = Time.timeScale == 0 ? 1 : 0;
+			Debug.LogError(Time.timeScale);
 		}
 
 		public void UnPauseGame()

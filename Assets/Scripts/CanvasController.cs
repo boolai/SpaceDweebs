@@ -34,5 +34,10 @@ namespace BoogieDownGames {
 		{
 			m_anime.SetTrigger("opengameover");
 		}
+
+		public void PauseGame()
+		{
+			Time.timeScale = 0.0f;
+		}
 	}
 }
