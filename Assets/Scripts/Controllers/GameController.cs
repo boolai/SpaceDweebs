@@ -15,11 +15,6 @@ namespace BoogieDownGames {
 			Time.timeScale = 1.0f;
 		}
 
-		void Update()
-		{
-			Debug.LogError(Time.timeScale);
-		}
-
 		public void PauseGame()
 		{
 			//GameMaster.Instance.Pause();
