@@ -37,6 +37,7 @@ namespace BoogieDownGames {
 
 		void Start()
 		{
+			Time.timeScale = 1.0f;
 			m_toggle.isOn = GameMaster.Instance.isTutorialOn;
 
 		}
