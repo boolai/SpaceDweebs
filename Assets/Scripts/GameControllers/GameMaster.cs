@@ -126,10 +126,10 @@ namespace BoogieDownGames {
 		private bool m_isGameSetupDone;
 
 		private int SaveFileCreated = 0;
+	
 		#endregion
 
 		#region PROPERTIES
-	
 
 		public int AddSeqAtRound
 		{
@@ -972,7 +972,7 @@ namespace BoogieDownGames {
 
 		public void RunHitDetections()
 		{
-			if (Input.GetButtonDown("Fire1")) {
+			if (Input.GetButtonDown("Fire1") && Time.timeScale != 0) {
 				
 				//Convert 3d to 2d space then cast the ray detect the hit
 				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -1725,7 +1725,6 @@ namespace BoogieDownGames {
 			else
 				ResetScore ();
 		}
-
 		#endregion
 	}
 }

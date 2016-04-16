@@ -22,7 +22,6 @@ namespace BoogieDownGames {
 			//GameMaster.Instance.GameFSM.ChangeState(GameStatePause.Instance);
 
 			Time.timeScale = Time.timeScale == 0 ? 1 : 0;
-			Debug.LogError(Time.timeScale);
 		}
 
 		public void UnPauseGame()
