@@ -106,6 +106,12 @@ namespace BoogieDownGames {
 			get { return m_timemode; }
 		}
 
+		public bool IsPaused
+		{
+			get { return m_isPaused; }
+			set { m_isPaused = value; }
+		}
+
 		#endregion
 
 		public override void Awake ()

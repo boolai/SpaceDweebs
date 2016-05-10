@@ -1270,7 +1270,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2111744369}
+  m_Material: {fileID: 339679604}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -3635,7 +3635,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1210052498}
+  m_Material: {fileID: 1451824219}
   m_Color: {r: 0.03137255, g: 0.9058824, b: 0.08235294, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -3673,6 +3673,46 @@ MonoBehaviour:
   _Alpha: 1
   _Color: {r: 0.93255585, g: 1, b: 0.30147058, a: 1}
   ShaderChange: 0
+--- !u!21 &339679604
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 2DxFX/Standard/Outline
+  m_Shader: {fileID: 4800000, guid: de520773f9a4021489f5eb10014b9c8f, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Alpha
+        second: 0.86
+      data:
+        first:
+          name: _OutLineSpread
+        second: 0.0022
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _ColorX
+        second: {r: 0.7058823, g: 0.7058823, b: 0.7058823, a: 1}
 --- !u!1 &350167527
 GameObject:
   m_ObjectHideFlags: 0
@@ -6269,6 +6309,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 439036, guid: 0fafc89bd25184a5982d376c4c35d14f, type: 2}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11495886, guid: 0fafc89bd25184a5982d376c4c35d14f, type: 2}
+      propertyPath: isTutorialOn
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12619,46 +12663,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!21 &1210052498
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 2DxFX/Standard/EdgeColor
-  m_Shader: {fileID: 4800000, guid: 9f6f5764ea9c1fe4eb7edce591a7c442, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-      data:
-        first:
-          name: _MainTex
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-    m_Floats:
-      data:
-        first:
-          name: _Alpha
-        second: 0
-      data:
-        first:
-          name: _Distortion
-        second: 0
-    m_Colors:
-      data:
-        first:
-          name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _ColorX
-        second: {r: 0.93255585, g: 1, b: 0.30147058, a: 1}
 --- !u!1 &1232080858
 GameObject:
   m_ObjectHideFlags: 0
@@ -15284,6 +15288,46 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1411910236}
+--- !u!21 &1451824219
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 2DxFX/Standard/EdgeColor
+  m_Shader: {fileID: 4800000, guid: 9f6f5764ea9c1fe4eb7edce591a7c442, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Alpha
+        second: 0
+      data:
+        first:
+          name: _Distortion
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _ColorX
+        second: {r: 0.93255585, g: 1, b: 0.30147058, a: 1}
 --- !u!1 &1452893901
 GameObject:
   m_ObjectHideFlags: 0
@@ -17045,6 +17089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_anime: {fileID: 1574810203}
+  m_pauseButton: {fileID: 1269070480}
 --- !u!114 &1574810205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22316,46 +22361,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!21 &2111744369
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 2DxFX/Standard/Outline
-  m_Shader: {fileID: 4800000, guid: de520773f9a4021489f5eb10014b9c8f, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-      data:
-        first:
-          name: _MainTex
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-    m_Floats:
-      data:
-        first:
-          name: _Alpha
-        second: 0.86
-      data:
-        first:
-          name: _OutLineSpread
-        second: 0.0022
-    m_Colors:
-      data:
-        first:
-          name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _ColorX
-        second: {r: 0.7058823, g: 0.7058823, b: 0.7058823, a: 1}
 --- !u!1 &2137959205
 GameObject:
   m_ObjectHideFlags: 0

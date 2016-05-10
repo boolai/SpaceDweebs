@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 namespace BoogieDownGames {
 
@@ -10,6 +11,9 @@ namespace BoogieDownGames {
 
 		[SerializeField]
 		private Animator m_anime;
+
+		[SerializeField]
+		private Button m_pauseButton;
 
 		void Awake()
 		{
@@ -38,6 +42,13 @@ namespace BoogieDownGames {
 		public void PauseGame()
 		{
 			Time.timeScale = 0.0f;
+			m_pauseButton.interactable = false;
+		}
+
+		public void UnPauseGame()
+		{
+			Time.timeScale = 1.0f;
+			m_pauseButton.interactable = true;
 		}
 	}
 }

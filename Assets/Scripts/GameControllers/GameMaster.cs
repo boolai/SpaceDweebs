@@ -943,7 +943,7 @@ namespace BoogieDownGames {
 			NotificationCenter.DefaultCenter.AddObserver(this, "GameStatePlayerOneLostUpdate");
 			NotificationCenter.DefaultCenter.AddObserver(this, "GameStatePlayerOneLostExit");
 			NotificationCenter.DefaultCenter.AddObserver(this, "GameStatePauseEnter");
-			NotificationCenter.DefaultCenter.AddObserver(this, "GameStatePauseUpdate");
+			NotificationCenter.DefaultCenter.AddObserver(this, "GameStatUpdate");
 			NotificationCenter.DefaultCenter.AddObserver(this, "GameStatePauseExit");
 			NotificationCenter.DefaultCenter.AddObserver(this, "GameStateDisplaySpecialEnter");
 			NotificationCenter.DefaultCenter.AddObserver(this, "GameStateDisplaySpecialUpdate");
